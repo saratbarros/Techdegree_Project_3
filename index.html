@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Code Review, sign up for our newsletter straight to your inbox.">
+        <title>The Code Review | Registration form</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>The Code Review</h1>
+        </header>
+        <main>
+            <h2>Signup for our newsletter</h2>
+            <p class="intro">Get the lastest news on how your code is doing right in your inbox</p>
+            
+        <form action="index.html" method="post">
+            <fieldset>
+                <legend><h2>Contact Information</h2></legend>
+
+                <div class="flex">
+                <label for="name">Full Name</label>
+                <input required type="text" id="name" name="user_name" placeholder="Required">
+                </div>
+
+                <div class="flex">
+                <label for="email">Email Address</label>
+                <input required type="email" id="email" name="user_email" placeholder="Required">
+                </div>
+
+                <div class="flex">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone">
+                </div>
+
+                <div class="flex">
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address">
+                </div>
+
+                <div class="flex">
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city">
+                </div>
+
+                <div class="flex">
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                    <option value="disabled selected hidden">Choose State</option>
+                    <optgroup label="Greater London">
+                        <option value="camden">Camden</option>
+                        <option value="city_of_london">City of London</option>
+                        <option value="city_of_westminister">City of Westminister</option>
+                        <option value="hackney">Hackney</option>
+                        <option value="hammersmith_and_fulham">Hammersmith and Fulham</option>
+                        <option value="islington">Islington</option>
+                    </optgroup>
+
+                    <optgroup label="Greater Manchester">
+                        <option value="bolton">Bolton</option>
+                        <option value="bury">Bury</option>
+                        <option value="oldham">Oldham</option>
+                        <option value="rochdale">Rochdale</option>
+                        <option value="trafford">Trafford</option>
+                        <option value="wigan">Wigan</option>
+                    </optgroup>
+
+                    <optgroup label="Midlands">
+                        <option value="derbyshire">Derbyshire</option>
+                        <option value="herefordshire">Herefordshire</option>
+                        <option value="leicestershire">Leicestershire</option>
+                        <option value="nottinghamshire">Nottinghamshire</option>
+                        <option value="rutland">Rutland</option>
+                        <option value="staffordshire">Staffordshire</option>
+                    </optgroup>
+                </select>
+                </div>
+
+                <div class="flex-zip">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="name_zip" class="push">
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><h2>Newsletter</h2></legend>
+                <div  class="highlight">
+                <label class="news">Select the newsletters you would like to receive</label>
+                <input type="checkbox" id="html" value="html_news" name="user_news"><label class="light" for="html">HTML News</label><br>
+                <input type="checkbox" id="css" value="css_news" name="user_news"><label class="light" for="css">CSS News</label><br>
+                <input type="checkbox" id="javascript" value="javascript_news" name="user_news"><label class="light" for="javascript">Javascript News</label><br>
+
+                <label class="news">Newsletter format</label>
+                <input type="radio" id="html_format" value="html_format" name="user_format"><label class="light" for="html_format">HTML</label><br>
+                <input type="radio" id="plain_text" value="plain_text" name="user_format"><label class="light" for="plain_text">Plain text</label>
+                </div>
+
+                <label for="topics">Other topics you'd like to hear about</label>
+                <textarea id="topics" name="user_topics" placeholder="I would like hear about..."></textarea>
+
+                <button type="submit">Sign Up</button>
+            </fieldset>
+        </main>
+        </form>
+            <footer>
+                <p>Copyright The Code Review</p>
+            </footer>
+    </body>
+</html>
